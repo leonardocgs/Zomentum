@@ -14,9 +14,24 @@ html {
 
 /* Header */
 
-.Header img {
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 26px 0;
+  gap: 40px;
+}
+.header img {
   width: 202px;
 }
-
+.hamburguer-menu-icon > * {
+  background-color: #141414;
+  width: 27px;
+  height: 1.62px;
+}
+.hamburguer-menu-icon > :first-child,
+.hamburguer-menu-icon > :nth-child(2) {
+  margin-bottom: 8px;
+}
 @media (min-width: 600px) {
 }

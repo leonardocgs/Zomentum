@@ -1,7 +1,10 @@
+import HamburguerMenuIcon from "./HamburgerMenuIcon";
+
 const Header = () => {
   return (
     <div className="header">
-      <img src="../public/zomentum_logo.png" alt="Logo da Zumentum" />
+      <img src="/zomentum_logo.png" alt="Logo da Zumentum" />
+      <HamburguerMenuIcon />
     </div>
   );
 };
