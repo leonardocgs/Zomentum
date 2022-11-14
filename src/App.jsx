@@ -1,11 +1,13 @@
-import { useState } from 'react'
-import './App.css'
+import { useState } from "react";
+import Header from "./Header";
+import "./App.css";
 
 function App() {
-
   return (
-    <div className="App"></div>
-  )
+    <div className="App">
+      <Header />
+    </div>
+  );
 }
 
-export default App
+export default App;
