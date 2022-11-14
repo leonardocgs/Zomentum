@@ -1,14 +1,11 @@
-import { useState } from "react";
-const HamburguerMenuIcon = () => {
-  const [isActive, setActive] = useState(false);
-  const handleToggle = () => {
-    setActive(!isActive);
-  };
+const HamburguerMenuIcon = (props) => {
   const parentClassName = "hamburguer-menu-icon";
   return (
     <button
-      onClick={handleToggle}
-      className={isActive ? parentClassName + " clicked" : parentClassName}
+      className={
+        props.isActive ? parentClassName + " clicked" : parentClassName
+      }
+      onClick={props.handleToggle}
     >
       <div className="hamburguer-menu-bar"></div>
       <div className="hamburguer-menu-bar"></div>

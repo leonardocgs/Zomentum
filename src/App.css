@@ -8,6 +8,7 @@ a {
 }
 ul {
   list-style-type: none;
+  text-align: center;
 }
 html {
   box-sizing: border-box;
@@ -32,9 +33,13 @@ body {
 
 .header {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
   padding: 26px 0;
+  gap: 40px;
+  align-items: center;
+}
+.header .container {
+  display: flex;
   gap: 40px;
 }
 .header img {
@@ -69,5 +74,32 @@ body {
 .hamburguer-menu-icon.clicked > :nth-child(2) {
   display: none;
 }
+
+/* Header nav */
+
+.header nav {
+  height: 0;
+  transition: height 1s ease-in-out, padding-top 1s ease-in-out;
+  overflow: hidden;
+}
+.header nav.clicked {
+  transition: height 1s ease-in-out, padding-top 1s ease-in-out;
+  height: 100vh;
+  padding-top: 193px;
+}
+.header nav ul {
+  display: flex;
+  gap: 43px;
+  flex-direction: column;
+}
+.header nav a {
+  color: #000c2d;
+  font-size: 36px;
+  font-weight: 500;
+}
+.header li:last-child a {
+  color: #2f70fe;
+}
+
 @media (min-width: 600px) {
 }

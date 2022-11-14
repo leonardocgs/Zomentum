@@ -1,6 +1,6 @@
-const Navigation = () => {
+const Navigation = (props) => {
   return (
-    <nav>
+    <nav className={props.isActive ? "clicked" : null}>
       <ul>
         <li>
           <a href="#">Features</a>
