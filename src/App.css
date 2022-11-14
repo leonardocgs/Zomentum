@@ -11,6 +11,9 @@ html {
 *::after {
   box-sizing: inherit;
 }
+button {
+  background-color: rgba(255, 255, 255, 1);
+}
 
 /* Header */
 
@@ -24,6 +27,10 @@ html {
 .header img {
   width: 202px;
 }
+.hamburguer-menu-icon {
+  cursor: pointer;
+  line-height: none;
+}
 .hamburguer-menu-icon > * {
   background-color: #141414;
   width: 27px;
@@ -32,6 +39,19 @@ html {
 .hamburguer-menu-icon > :first-child,
 .hamburguer-menu-icon > :nth-child(2) {
   margin-bottom: 8px;
+}
+.hamburguer-menu-icon.clicked > * {
+  margin: 0;
+}
+.hamburguer-menu-icon.clicked > :first-child {
+  rotate: -45deg;
+  position: absolute;
+}
+.hamburguer-menu-icon.clicked > :last-child {
+  rotate: 45deg;
+}
+.hamburguer-menu-icon.clicked > :nth-child(2) {
+  display: none;
 }
 @media (min-width: 600px) {
 }
