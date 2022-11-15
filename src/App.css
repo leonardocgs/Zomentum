@@ -14,6 +14,10 @@ html {
   box-sizing: border-box;
   font-size: 10px;
 }
+h2 {
+  font-size: 3.6rem;
+  font-weight: medium;
+}
 *,
 *::before,
 *::after {
@@ -27,6 +31,7 @@ body {
   font-size: 1.6rem;
   font-family: "Poppins", Arial, sans-serif;
   font-weight: 400;
+  height: 100vh;
 }
 
 /* Header */
@@ -36,7 +41,9 @@ body {
   flex-direction: column;
   padding: 2.6rem 0;
   gap: 40px;
-  align-items: center;
+  width: 100%;
+  background-color: #ffffff;
+  position: fixed;
 }
 .header .container {
   display: flex;
@@ -44,7 +51,7 @@ body {
   padding: 0 3rem;
   justify-content: space-between;
 }
-.header .img-container {
+.header img {
   height: auto;
   width: 202px;
 }
@@ -87,13 +94,13 @@ body {
   background-color: white;
   transition: height 1s ease-in-out, padding-top 1s ease-in-out,
     top 1s ease-in-out;
+  position: fixed;
   overflow: hidden;
-  position: absolute;
 }
 .header nav.clicked {
   transition: height 1s ease-in-out, padding-top 1s ease-in-out,
     top 1s ease-in-out;
-  height: 100vh;
+  height: calc(100vh - 80px);
   padding-top: 19.3rem;
 }
 .header nav ul {
@@ -141,10 +148,31 @@ body {
 .hero-section .img-container {
   display: none;
 }
+
 /* features-section */
+
 .features-section {
+  text-align: center;
+  padding: 38px 0;
+}
+.features-section p {
+  font-size: 1.6rem;
+}
+.features-section h2 {
+  margin-bottom: 50px;
+}
+.features-section img {
+  margin-bottom: 24px;
+}
+.features-container {
+  max-width: 253px;
+}
+.features-section .features-container {
+  gap: 50px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
 }
 @media (min-width: 700px) and (max-width: 1250px) {
   .hero-section {
@@ -184,7 +212,6 @@ body {
   }
 
   /* header nav */
-
   .header nav {
     height: initial;
     width: initial;
