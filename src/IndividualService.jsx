@@ -1,16 +1,18 @@
-const IndividualService = (props) => {
+const IndividualService = ({ serviceInformation }) => {
   return (
     <section className="individual-service">
-      <img src={props.image.src} alt={props.image.alt} />
+      <img
+        src={serviceInformation.image.src}
+        alt={serviceInformation.image.alt}
+      />
       <div className="container">
-        <h2>{props.title}</h2>
-        <p>{props.paragraph}</p>
+        <h2>{serviceInformation.title}</h2>
+        <p>{serviceInformation.paragraph}</p>
         <div className="signup-link">
           <a href="#">Signup now</a>
           <img src="/arrow.svg" alt="A arrow icon" />
         </div>
       </div>
-      )
     </section>
   );
 };
