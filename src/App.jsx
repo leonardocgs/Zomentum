@@ -3,6 +3,7 @@ import "./App.css";
 import Hero from "./Hero";
 import Features from "./Features";
 import Services from "./Services";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Hero />
         <Features />
         <Services />
+        <Footer />
       </main>
     </div>
   );

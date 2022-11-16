@@ -1,9 +1,9 @@
-const IndividualFooterItem = (props) => {
+const IndividualFooterItem = ({ individualNavItem }) => {
   return (
     <nav>
-      <h3>{props.title}</h3>
+      <h3>{individualNavItem.title}</h3>
       <ul>
-        {props.listItem.map((item, index) => (
+        {individualNavItem.listItem.map((item, index) => (
           <li key={index + 1}>{item}</li>
         ))}
       </ul>
