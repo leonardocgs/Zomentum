@@ -159,6 +159,7 @@ main {
 .features-section {
   text-align: center;
   padding: 38px 0;
+  background-color: #00ff8514;
 }
 .features-section p {
   font-size: 1.6rem;
@@ -284,10 +285,41 @@ main {
 
   /* features-section */
 
+  .features-section {
+    padding: 7.9rem 4rem 10.7rem 4rem;
+  }
   .features-section .features-container {
     flex-direction: row;
     justify-content: center;
     gap: 56px;
+  }
+  /* services-section */
+
+  .services-section {
+    padding-top: 6.5rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .individual-service {
+    justify-content: space-around;
+  }
+  .individual-service:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+  .individual-service:nth-child(even) {
+    flex-direction: row;
+  }
+  .individual-service .container {
+    text-align: initial;
+
+    max-width: 410px;
+  }
+  .individual-service .container h2,
+  .individual-service p {
+    flex: auto;
+  }
+  .individual-service .signup-link {
+    align-self: flex-start;
   }
 }
 @media (min-width: 700px) and (max-width: 850px) {
@@ -298,5 +330,16 @@ main {
   .header nav ul > :last-child {
     border: 0;
     padding: 0;
+  }
+}
+@media (min-width: 1050px) {
+  .individual-service {
+    justify-content: center;
+    gap: 160px;
+  }
+  .individual-service,
+  .features-section {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
