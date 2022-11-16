@@ -1,4 +1,4 @@
-const IndividualFootItem = (props) => {
+const IndividualFooterItem = (props) => {
   return (
     <nav>
       <h3>{props.title}</h3>
@@ -10,4 +10,4 @@ const IndividualFootItem = (props) => {
     </nav>
   );
 };
-export default IndividualFootItem;
+export default IndividualFooterItem;
