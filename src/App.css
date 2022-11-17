@@ -217,6 +217,31 @@ main {
   flex-direction: column;
   gap: 24px;
 }
+/* footer */
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
+  color: #ffffff;
+  align-items: center;
+  padding: 6rem 4.3rem;
+  font-size: 1.4rem;
+  gap: 61px;
+}
+.footer nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.footer .individual-footer-item {
+  flex: auto;
+}
+.footer ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 
 @media (min-width: 700px) and (max-width: 1250px) {
   .hero-section {
@@ -341,5 +366,10 @@ main {
   .features-section {
     padding-left: 0;
     padding-right: 0;
+  }
+}
+@media (max-width: 375px) {
+  .footer nav {
+    gap: 15px;
   }
 }

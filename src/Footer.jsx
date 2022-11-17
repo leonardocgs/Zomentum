@@ -26,13 +26,15 @@ const Footer = () => {
     },
   ];
   return (
-    <footer className=".footer">
-      {navList.map((individualNavItem, index) => (
-        <IndividualFooterItem
-          individualNavItem={individualNavItem}
-          key={index}
-        />
-      ))}
+    <footer className="footer">
+      <nav>
+        {navList.map((individualNavItem, index) => (
+          <IndividualFooterItem
+            individualNavItem={individualNavItem}
+            key={index}
+          />
+        ))}
+      </nav>
       <p>© 2020 Pactora Inc. All rights reserved.</p>
     </footer>
   );
